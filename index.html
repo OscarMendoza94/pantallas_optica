@@ -1,0 +1,59 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html"; charset="UTF-8" />
+	<title>Ingrese su código</title>
+<!-- Bootstrap & JQUERY -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<link href="css/bootstrapMinthy.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- Sweet Alert-->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- JS personalizado -->
+	<script type="text/javascript" src="js/functions.js"></script>
+<!-- CSS personalizado -->	
+	<link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+	<p>Código Cliente <b>QHdA8rjNHwRoyci2</b></p>
+	<p> Código Óptica <b>Ds26jymjCYEoD4Vm</b></p>
+	<p> Usuario Óptica <b>admin</b></p>
+	<p> Password Óptica <b>admin</b></p>
+	<div>
+		<input 
+			type="text" 
+			name="product_code" 
+			id="product_code" 
+			class="form-controll"
+			placeholder="Ingrese su código"
+
+		/>
+		<button
+			type="button"
+			class="btn btn-warning btn_validate"
+			onclick="validate_code();"
+		>
+			Verificar Código
+		</button>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesión</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      	<div class="modal-body">
+
+		    </div>
+
+	      <div class="modal-footer">
+	        <!--button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+	        <!--button type="button" class="btn btn-primary">Save changes</button-->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</body>
+</html>

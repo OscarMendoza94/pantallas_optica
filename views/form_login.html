@@ -1,0 +1,43 @@
+
+<div class="row align-items-center">
+
+	<div class="row mb-12 align-items-center">
+		<label for="user">
+		Usuario
+	</label>
+	<br/>
+	<input 
+		type="text" 
+		class="form-control"
+		id="user"
+		name="user"
+		placeholder="Ingrese su usuario..."/>
+	</div>
+	<div class="row mb-12 align-items-center">
+		<label for="pass">
+		Contraseña
+	</label>
+	<br/>
+	<input 
+		type="password" 
+		class="form-control"
+		id="pass"
+		name="pass"
+		placeholder="Ingrese su contraseña..."/>
+	</div>
+	<div class="row mb-10 align-items-center">
+		<br/><br/><br/>
+		<button 
+			type="button" 
+			class="btn btn-info"
+			onclick="validate_login();">
+			Iniciar Sesión
+		</button>
+	</div>
+
+	<div class="row mb-10 align-items-center">
+		<p align="center" id="login_response">
+			
+		</p>
+	</div>
+</div>
