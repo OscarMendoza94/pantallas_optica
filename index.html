@@ -4,7 +4,7 @@
 	<title>Ingrese su código</title>
 <!-- Bootstrap & JQUERY -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-	<link href="css/bootstrapMinthy.css" rel="stylesheet">
+	<link href="css/bootstrapMorph.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <!-- Sweet Alert-->
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -14,26 +14,39 @@
 	<link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-	<p>Código Cliente <b>QHdA8rjNHwRoyci2</b></p>
-	<p> Código Óptica <b>Ds26jymjCYEoD4Vm</b></p>
-	<p> Usuario Óptica <b>admin</b></p>
-	<p> Password Óptica <b>admin</b></p>
-	<div>
-		<input 
-			type="text" 
-			name="product_code" 
-			id="product_code" 
-			class="form-controll"
-			placeholder="Ingrese su código"
+	<div class="global">
+		<img src="img/fondo.jpg" class="global"/>
+		<div class="logo">
+			<img src="img/png_lens/logo1.png">
+		</div>
+		<!--p>Código Cliente <b>QHdA8rjNHwRoyci2</b></p>
+		<p> Código Óptica <b>Ds26jymjCYEoD4Vm</b></p>
+		<p> Usuario Óptica <b>admin</b></p>
+		<p> Password Óptica <b>admin</b></p-->
+		<div class="container">
+			<h1 style="z-index:30000; position :fixed; top : 20%;">
+				<p>Validación de Productos 
+					<br><b>Premium</b></p>
+			</h1>
+			<input 
+				type="text" 
+				name="product_code" 
+				id="product_code" 
+				class="form-control"
+				placeholder="Ingrese su código"
 
-		/>
-		<button
-			type="button"
-			class="btn btn-warning btn_validate"
-			onclick="validate_code();"
-		>
-			Verificar Código
-		</button>
+			/>
+			<button
+				type="button"
+				class="btn btn-primary btn_validate"
+				onclick="validate_code();"
+			>
+				Verificar Código
+			</button>
+		</div>
+		<img src="img/png_lens/marcas1.png" class="marcas">
+
+		<!--img src="img/glassess.png" class="glasses"-->
 	</div>
 
 	<!-- Modal -->
@@ -57,3 +70,37 @@
 	</div>
 </body>
 </html>
+
+<script type="text/javascript">
+	setTimeout(
+		function(){
+  $(".logo").animate({left: '250px'});
+			$('.global').addClass('enfoque');
+			setTimeout(
+				function(){
+					//$('body').removeClass('desenfoque_1');
+					$('body').removeClass('enfoque');
+					setTimeout(
+						function(){
+							$('body').removeClass('enfoque');
+							$('body').addClass('desenfoque_1');
+							setTimeout(
+								function(){
+									$('body').removeClass('desenfoque_1');
+									$('body').addClass('enfoque');
+								},
+								'500'
+							);
+						},
+						'500'
+					);
+				},
+				'500'
+			);
+
+			
+		},
+		'500'
+	);
+	
+</script>
