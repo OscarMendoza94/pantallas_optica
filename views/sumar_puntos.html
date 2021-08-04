@@ -1,16 +1,96 @@
 <html>
-<head>
-	<title>Sumar puntos</title>
-</head>
-<body>
-	<div class="row">
-		<p align="center">
-			Bienvenido ADMIN
-		</p>
-		<div class="col mb-12">
-			Producto de prueba
-			
-		</div>
-	</div>
-</body>
+    <head>
+    	<meta http-equiv="Content-Type" content="text/html"; charset="UTF-8" />
+    	<title>Sumar Puntos</title>
+    <!-- Bootstrap & JQUERY -->
+    	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    	<link href="../css/bootstrapMorph.css" rel="stylesheet">
+    	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Sweet Alert-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--icons-->
+    <script src="https://kit.fontawesome.com/104aba77e7.js" crossorigin="anonymous"></script>
+    <!-- JS personalizado -->
+    	<script type="text/javascript" src="../js/functions.js"></script>
+    <!-- CSS personalizado -->	
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    	<link href="../css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="global">
+            <div class="logo">
+			    <img src="../img/png_lens/logo1.png">
+		    </div>
+		    <img src="../img/fondo.jpeg" class="global"/>
+        	<div class="optica_points" style="position: absolute; top :0; left : 75%; background : white; padding : 10px; border-bottom-left-radius : 14px; width : 25%;
+        	border : 1px dashed blue;">
+        		<p>
+        			Usuario : <b id="user_name_session">Optica 1</b>
+        		
+        		<div class="col-mb-12">
+        			Puntos actuales : 
+        	            <span class="current_points_optica">120</span>
+        			
+        			
+        			
+    			    <button onclick="logout();" class="btn_logout">
+    			        <i class="fas fa-door-open"></i>
+    			        <br/>Salir
+    		        </button>
+        			    
+        		</div></p>
+        	</div>
+        	<div class="form_code">
+			    <h1 style=""><!-- z-index:30000; position :fixed; top : 20%; -->
+				<p>Validación de <br/>  
+					Productos <b>Premium</b></p>
+			    </h1>
+    			<input 
+    				type="text"
+    				name="product_code" 
+    				id="product_code"
+    				class="form-control"
+    				placeholder="Ingrese su código"
+    				value="Ds26jymjCYEoD4Vm"
+    			/>
+    			<button
+    				type="button"
+    				class="btn btn-primary btn_validate"
+    				onclick="validate_code();"
+    			>
+    				Verificar Código
+    			</button>
+    			
+    			<div id="current_points">
+    			    <br/>
+        			    <p> Sumar 
+        		        <button class="points" onclick="add_points( this, 1 );">
+        			        <p align="center" > + <i id="new_points">50</i></span>
+        		        </button>
+        			     puntos </p>
+        			</div>
+    		</div>
+        </div>
+    <!-- Modal -->
+    	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    	  <div class="modal-dialog">
+    	    <div class="modal-content">
+    	      <div class="modal-header">
+    	        <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesión</h5>
+    	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    	      </div>
+    	      	<div class="modal-body">
+    
+    		    </div>
+    
+    	      <div class="modal-footer">
+    	        <!--button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+    	        <!--button type="button" class="btn btn-primary">Save changes</button-->
+    	      </div>
+    	    </div>
+    	  </div>
+    	</div>
+    </body>
 </html>

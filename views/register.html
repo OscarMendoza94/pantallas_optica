@@ -1,0 +1,142 @@
+<html>
+    <head>
+    	<meta http-equiv="Content-Type" content="text/html"; charset="UTF-8" />
+    	<title>Registrar Óptica</title>
+    <!-- Bootstrap & JQUERY -->
+    	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    	<link href="../css/bootstrapMorph.css" rel="stylesheet">
+    	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Sweet Alert-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--icons-->
+    <script src="https://kit.fontawesome.com/104aba77e7.js" crossorigin="anonymous"></script>
+    <!-- JS personalizado -->
+    	<script type="text/javascript" src="../js/functions.js"></script>
+    <!-- CSS personalizado -->	
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    	<link href="../css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="logo" style="top: 30% !important; position : fixed; width : 120%; right: -65%;">
+        	<img src="../img/png_lens/logo1.png">
+        </div>
+        <div class="container_register">
+            <div class="col-mb-10">
+                <form action="" onsubmit="return send();">
+                    <div class="form_register">
+                        <div class"col-mb-10">
+                            <label for="optica_name"> Óptica *</label><br />
+                                <input type="text"
+                                    id="optica_name"
+                                    name="optica_name"
+                                    placeholder="Nombre de la Óptica"
+                                    class="form-control"
+                                    required />
+                        </div>
+                        <!--div class"col-mb-10">
+                            <label for="user_name">Usuario *</label><br />
+                                <input type="text"
+                                    id="user_name"
+                                    name="user_name"
+                                    placeholder="Su usuario"
+                                    class="form-control"
+                                    required />
+                        </div-->
+                        
+                        <div class"col-mb-10">
+                            <label for="address">Dirección *</label><br />
+                                <input type="text"
+                                    id="address"
+                                    name="address"
+                                    placeholder="Dirección de la Óptica"
+                                    class="form-control"
+                                    required />
+                        </div>
+                        
+                        <div class="row g-3">
+                            <div class="col">
+                                <label for="email">Correo *</label><br />
+                                    <input type="email"
+                                        id="email"
+                                        name="email"
+                                        placeholder="Su correo..."
+                                        class="form-control"
+                                        required />
+                            </div>
+                            
+                            <div class="col">
+                                <label for="telephone">Teléfono *</label><br />
+                                    <input type="number"
+                                        id="telephone"
+                                        name="telephone"
+                                        placeholder="Teléfono de Óptica..."
+                                        class="form-control"
+                                        required />
+                            </div>
+                        </div>
+                        
+                        <div class"col-mb-10">
+                            <label for="persone_in_charge">Responsable *</label><br />
+                                <input type="text"
+                                    id="persone_in_charge"
+                                    name="persone_in_charge"
+                                    placeholder="Nombre de la Persona Responsable"
+                                    class="form-control"
+                                    required />
+                        </div>
+                        
+                        <div class="row g-3">
+                            <div class="col">
+                                <label for="password">Contraseña *</label><br />
+                                    <input type="password"
+                                        id="password"
+                                        name="password" 
+                                        placeholder="Contraseña"
+                                        class="form-control"
+                                        required />
+                            </div>
+                            
+                            <div class="col">
+                                <label for="password_confirm">Confirmar contraseña *</label><br />
+                                    <input type="password"
+                                        id="password_confirm"
+                                        name="password_confirm"
+                                        placeholder="Confirmar contraseña"
+                                        class="form-control"
+                                        required />
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="col-mb-10">
+                            <br/>
+                            <textarea class="form-control aviso_privacidad" readonly>Aqui va el aviso de privacidad</textarea>
+                        </div>
+                        
+                        <div class="col-mb-10">
+                            <input 
+                                type="checkbox" 
+                                id="accept_conditions"
+                                name="accept_conditions"
+                                class="" /> 
+                            <label for="accept_conditions">Eh leído y acepto el Aviso de Privacidad * </label>
+                        </div>
+                        <div class="col-mb-10">
+                            <br />
+                            <button 
+                                type="submit"
+                                onclick=""
+                                class="btn btn-primary form-control"
+                            >
+                                Registrar Óptica
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <img src="../img/png_lens/marcas1.png" class="marcas"  style="left : 55%; top : 50%;">
+        </div>
+    </body>
+</html>
